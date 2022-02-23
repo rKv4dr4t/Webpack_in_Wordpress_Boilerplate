@@ -24,30 +24,34 @@ import xss from 'xss';
     }
 }());
 
-//// Esempio di package, xss ////
+
+//// Example: package, xss ////
 // let html = xss('<script>alert("xss");</script>');
 // console.log(html);
 
 
-//// Esempio di Modernizr ////
+//// Example: Modernizr ////
 // if (Modernizr.canvas) {
 //     console.log('canvas supported');
 // } else {
 //     console.log('canvas unsopported');
 // }
 
-//// Esempio di transpiling con Babel, il risultato diventerà return input != null ? input : "Hello world" ////
+
+//// Example: transpiling throw Babel, result will return input != null ? input : "Hello world" ////
 // function greet(input) {
 //     return input ?? "Hello world";
 // }
 // window.greet = greet;
 
-//// Esempio di funzione esposta con window ////
+
+//// Example: exposed function throw window ////
 // function testFunction() {
 //     document.getElementById('output').innerText = document.getElementById('test').value;
 // }
 // window.testFunction = testFunction;
 
-//// Esempio di importazione di file ////
+
+//// Example: file importation ////
 // import {testFunction} from './fileExportTest.js';
 // window.testFunction = testFunction;
