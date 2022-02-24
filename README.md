@@ -27,9 +27,9 @@ npm run build
 
 
 ## To do
-- remember to sanitize input client throw js-xss (follow the example in `/js/index.js`)
+- remember to sanitize input client through js-xss (follow the example in `/js/index.js`)
 - remember to add conditionals for Modernizr (follow the example in `/js/index.js`)
-- remember to lint throw Prettier after deploying: `npx prettier --write .`
+- remember to lint through Prettier after deploying: `npx prettier --write .`
 
 
 ## Features
