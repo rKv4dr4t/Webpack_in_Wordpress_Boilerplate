@@ -45,7 +45,10 @@ npm run build
 
 ## Extra
 
-If you prefer export the CSS separately from the main build, you can install [MiniCSSExtractPlugin](https://www.npmjs.com/package/mini-css-extract-plugin). In this way you will not have errors if you put url in CSS (for example using background url). In `webpack.config.js`:
+If you prefer export the CSS separately from the main build, you can install [MiniCSSExtractPlugin](https://www.npmjs.com/package/mini-css-extract-plugin). In this way you will not have errors if you put url in CSS (for example using background url). 
+- remember to link the CSS correctly in HTML (it will no longer be included in the bundle)
+
+In `webpack.config.js`:
 - remove the section of `test: /\.s[ac]ss$/i,`
 - add in the first line of the file: `const MiniCssExtractPlugin = require("mini-css-extract-plugin");`
 - add in the first line of `module.exports` the line: `plugins: [new MiniCssExtractPlugin()],`
