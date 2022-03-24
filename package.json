@@ -21,6 +21,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "mini-css-extract-plugin": "^2.6.0",
     "normalize.css": "^8.0.1",
     "xss": "^1.0.10"
   },

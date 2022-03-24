@@ -1,4 +1,7 @@
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+
 module.exports = {
+  plugins: [new MiniCssExtractPlugin()],
   entry: [
     "./js/modernizr-custom.js",
     "./js/index.js"
@@ -20,20 +23,16 @@ module.exports = {
         }
       },
       {
-        test: /\.s[ac]ss$/i,
-        use: [
-          "style-loader",
-          "css-loader",
-          "postcss-loader",
-          {
-            loader: "sass-loader",
-            options: {
-              // Prefer `dart-sass`
-              implementation: require("sass")
-            },
-          },
+        test: /\.css$/,
+        use: [{
+          loader: MiniCssExtractPlugin.loader,
+          options: {
+            publicPath: '',
+          }
+        },
+          'css-loader'
         ],
-      }
+      },
     ]
   }
 };

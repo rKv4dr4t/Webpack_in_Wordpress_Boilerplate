@@ -1,4 +1,4 @@
-import "../css/main.scss";
+import "../css/main.css";
 import xss from 'xss';
 
 // Avoid `console` errors in browsers that lack a console.
