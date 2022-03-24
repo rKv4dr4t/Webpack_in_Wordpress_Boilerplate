@@ -2,7 +2,7 @@
 
 This is a sample project that provide a simple installation of Webpack in a Wordpress theme, adding also some useful tools like Babel, Modernizr, js-xss, normalize.css, Autoprefixer, Prettier and a Sass boilerplate.
 
-This **branch** build separately CSS and main.js, if you want to have two different and separate files just change the branch.
+This **branch** builds separately CSS and main.js, if you want to have two different and separate files just change the branch.
 
 
 ## Setup 
