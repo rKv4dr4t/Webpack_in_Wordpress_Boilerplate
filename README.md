@@ -2,7 +2,7 @@
 
 This is a sample project that provide a simple installation of Webpack in a Wordpress theme, adding also some useful tools like Babel, Modernizr, js-xss, normalize.css, Autoprefixer, Prettier and a Sass boilerplate.
 
-This **branch** export the CSS into he main build, indeed there is no [MiniCSSExtractPlugin](https://www.npmjs.com/package/mini-css-extract-plugin) that builds separately CSS from main.js
+This **branch** export the CSS into the main build, indeed there is no [MiniCSSExtractPlugin](https://www.npmjs.com/package/mini-css-extract-plugin) that builds separately CSS from main.js
 
 
 ## Setup 
