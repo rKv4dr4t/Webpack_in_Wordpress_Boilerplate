@@ -1,5 +1,7 @@
 import "../css/main.css";
 import xss from 'xss';
+import React from 'react';
+import ReactDOM from 'react-dom';
 
 // Avoid `console` errors in browsers that lack a console.
 (function () {
@@ -23,6 +25,29 @@ import xss from 'xss';
         }
     }
 }());
+
+
+// React
+class Button extends React.Component {
+    scream() {
+      alert('AAAAAAAAHHH!!!!!');
+    }
+  
+    render() {
+      return <button onClick={this.scream}>AAAAAH!</button>;
+    }
+  }
+  ReactDOM.render (
+    <Button />,
+    document.getElementById('root')
+  )
+
+
+
+
+
+
+  
 
 
 //// Example: package, xss ////

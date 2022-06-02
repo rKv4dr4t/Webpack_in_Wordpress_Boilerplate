@@ -23,11 +23,14 @@
   "dependencies": {
     "mini-css-extract-plugin": "^2.6.0",
     "normalize.css": "^8.0.1",
+    "react": "^18.1.0",
+    "react-dom": "^18.1.0",
     "xss": "^1.0.10"
   },
   "devDependencies": {
     "@babel/core": "^7.17.5",
     "@babel/preset-env": "^7.16.11",
+    "@babel/preset-react": "^7.17.12",
     "autoprefixer": "^10.4.2",
     "babel-loader": "^8.2.3",
     "css-loader": "^6.6.0",
