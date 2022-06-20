@@ -1,5 +1,7 @@
 import "../css/main.css";
 import xss from 'xss';
+import React from 'react'
+import ReactDOM from 'react-dom'
 
 // Avoid `console` errors in browsers that lack a console.
 (function () {
