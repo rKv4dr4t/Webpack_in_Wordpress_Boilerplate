@@ -1,6 +1,6 @@
 # Webpack in Wordpress - Boilerplate
 
-This is a sample project that provide a simple installation of Webpack in a Wordpress theme, adding also some useful tools like Babel, Modernizr, js-xss, normalize.css, Autoprefixer, Prettier and a Sass boilerplate.
+This is a sample project that provide a simple installation of Webpack in a Wordpress theme, adding also some useful tools like Babel, React, Modernizr, js-xss, normalize.css, Autoprefixer, Prettier and a Sass boilerplate.
 
 This **branch** builds separately CSS and main.js, if you want to have two different and separate files just change the branch.
 
@@ -37,6 +37,7 @@ npm run build
 ## Features
 
 - [Babel](https://github.com/babel/babel) 
+- [React](https://reactjs.org/)
 - [Modernizr](https://github.com/Modernizr/Modernizr)
 - [js-xss](https://github.com/leizongmin/js-xss)
 - [Sass boilerplate](https://github.com/KittyGiraudel/sass-boilerplate)
