@@ -4,6 +4,8 @@ This is a sample project that provide a simple installation of Webpack in a Word
 
 This **branch** builds separately CSS and main.js, if you want to have two different and separate files just change the branch.
 
+This **branch** exports the CSS into the main build, indeed there is no [MiniCSSExtractPlugin](https://www.npmjs.com/package/mini-css-extract-plugin) that builds separately CSS from main.js
+
 
 ## Setup 
 
