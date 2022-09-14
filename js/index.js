@@ -1,7 +1,18 @@
 import "../css/main.css";
 import xss from 'xss';
-import React from 'react'
-import ReactDOM from 'react-dom'
+import {createRoot} from 'react-dom/client';
+import {StrictMode} from 'react';
+
+// React App
+// import '../css/main.css';
+// import App from './App.js';
+// const rootElement = document.getElementById('root');
+// const root = createRoot(rootElement);
+// root.render(
+//   <StrictMode>
+//     <App />
+//   </StrictMode>,
+// );
 
 // Avoid `console` errors in browsers that lack a console.
 (function () {
