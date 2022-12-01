@@ -1,14 +1,11 @@
-const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 
 module.exports = {
   plugins: [new MiniCssExtractPlugin()],
-  entry: [
-    "./js/modernizr-custom.js",
-    "./js/index.js"
-  ],
+  entry: ['./js/modernizr-custom.js', './js/index.js'],
   output: {
     filename: 'main.js',
-    publicPath: 'dist'
+    publicPath: 'dist',
   },
   module: {
     rules: [
@@ -18,21 +15,36 @@ module.exports = {
         use: {
           loader: 'babel-loader',
           options: {
-            presets: ['@babel/preset-env',["@babel/preset-react", {"runtime": "automatic"}]]
-          }
-        }
+            presets: [
+              '@babel/preset-env',
+              ['@babel/preset-react', { runtime: 'automatic' }],
+            ],
+          },
+        },
+      },
+      {
+        test: [/\.bmp$/, /\.gif$/, /\.jpe?g$/, /\.png$/],
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              name: '/[path][name].[ext]',
+            },
+          },
+        ],
       },
       {
         test: /\.css$/,
-        use: [{
-          loader: MiniCssExtractPlugin.loader,
-          options: {
-            publicPath: '',
-          }
-        },
-          'css-loader'
+        use: [
+          {
+            loader: MiniCssExtractPlugin.loader,
+            options: {
+              publicPath: '',
+            },
+          },
+          'css-loader',
         ],
       },
-    ]
-  }
-};
+    ],
+  },
+}
